@@ -1,0 +1,18 @@
+.flex-container {
+  border: solid 1px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.flex-container div {
+  height: 300px;
+  width: 250px;
+  background-color: hsl(hue, saturation, lightness);
+  border: solid pink;
+}
+
+.flex-container .flex.item5 {
+  order: 1;
+  align-self: flex-start;
+}

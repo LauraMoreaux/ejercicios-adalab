@@ -1,0 +1,14 @@
+.flex-container {
+  height: 500px;
+  width: 500px;
+  background-color: pink;
+  border: solid pink;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.flex-container div {
+  border: solid hotpink;
+  size: 100%;
+}

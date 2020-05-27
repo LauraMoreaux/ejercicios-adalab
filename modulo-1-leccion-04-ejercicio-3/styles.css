@@ -1,0 +1,21 @@
+.flex-container {
+  height: 100px;
+  background-color: pink;
+  border: solid pink;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex-container div {
+  border: solid hotpink;
+}
+
+.flex-item1 {
+  margin-left: 20px;
+}
+
+.flex-item5 {
+  margin-right: 20px;
+}

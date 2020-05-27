@@ -1,0 +1,16 @@
+div {
+    size: 100px ;
+    background-color: mediumturquoise;
+}
+
+.div1 {
+    display: block ;
+}
+
+.div2 {
+    display: none ;
+}
+
+.div3 {
+    display: inline ;
+}
