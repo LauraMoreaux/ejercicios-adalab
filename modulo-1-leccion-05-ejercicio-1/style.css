@@ -1,7 +1,5 @@
-.menu {
-  /* NO CORRECTO
+.menu li {
+  display: inline-block;
   list-style-type: none;
-  display: inline;
-  justify-content: space-evenly;
-  */
+  padding: 6px;
 }

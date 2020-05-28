@@ -1,0 +1,31 @@
+.body {
+  border: solid 8px black;
+  position: relative;
+}
+
+.article {
+  margin-top: 106px;
+  position: relative;
+
+  left: 40px;
+}
+
+.name {
+  color: black;
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+.name2 {
+  font-size: 32px;
+  margin-bottom: 32px;
+}
+
+.text {
+  font-size: 18px;
+  margin-bottom: 27px;
+}
+
+.info {
+  padding: 8px 16px;
+}
