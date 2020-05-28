@@ -5,10 +5,11 @@
   border: solid pink;
   display: flex;
   flex-direction: row;
+  align-content: flex-start;
   flex-wrap: wrap;
 }
 
 .flex-container div {
   border: solid hotpink;
-  size: 100%;
+  /* size: 100%; */
 }
