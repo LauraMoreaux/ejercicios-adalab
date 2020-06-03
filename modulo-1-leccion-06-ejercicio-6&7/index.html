@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ejercicio 6-7</title>
+
+    <style>
+      .wrapper {
+        background-color: blue;
+        margin: 20px;
+      }
+
+      @media all and (min-width: 768px) {
+        .wrapper {
+          background: pink;
+          margin: 50px;
+        }
+      }
+
+      @media all and (min-width: 1100px) {
+        .wrapper {
+          background: red;
+          margin-left: auto;
+          max-width: 750px;
+          margin-right: auto;
+          max-width: 750px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h4>Lorem</h4>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam,
+        excepturi vel. Aperiam nemo consequatur molestias veniam deleniti,
+        quidem magni fuga corporis saepe possimus eaque sint voluptates? Et at
+        dolore recusandae.
+      </p>
+    </div>
+  </body>
+</html>
