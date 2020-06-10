@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <title>Ejercicio 1</title>
+  </head>
+  <form action="" method="post">
+    <label for="fullName">Nombre </label>
+    <input type="text" id="fullName" name="fullName" required />
+    <label for="lastName">Apellido </label>
+    <input type="text" id="lastName" name="lastName" />
+    <br />
+    <label for="emailAddress"> Email </label>
+    <input type="email" id="emailAddress" name="emailAddress" required />
+    <br />
+    <label for="Adress">Calle </label>
+    <input type="text" id="Adress" name="Adress" required />
+    <br />
+    <label for="City">Ciudad </label>
+    <input type="text" id="City" name="City" required value="Madrid" />
+    <br />
+    <label for="Region">Provincia </label>
+    <input type="text" id="Region" name="Region" required />
+    <br />
+    <label for="Country">País </label>
+    <input type="text" id="Country" name="Country" required value="Esoaña" />
+    <br />
+    <label for="ID">DNI </label>
+    <input type="number" id="ID" name="ID" required />
+    <br />
+    <label for="Telephone">Teléfono </label>
+    <input type="tel" id="Telephone" name="Telephone" required />
+    <br />
+    <label for="Password">Contraseña </label>
+    <input type="password" id="Password" name="Password" required />
+    <label for="Password2">Confirmar Contraseña </label>
+    <input type="password" id="Password" name="Password2" required />
+    <input type="submit" value="Enviar" />
+  </form>
+</html>
+
+<!-- En vez de BR se utilizan DIVs individuales -->
+
+pattern="[0-9]{9}"

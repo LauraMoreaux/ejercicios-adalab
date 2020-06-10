@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+                 <form action="/sign" method="post">
+
+
+     <input type="text" name="fullName" required placeholder="First name" />
+
+    <input type="text" id="lastName" name="lastName" required placeholder="Surname" />
+
+    <input type="email" type="number" name="contact" required placeholder="Email or mobile number" />
+
+    <input type="email" type="number" name="contact" required placeholder="Re-enter email or mobile number" />
+
+
+    <input type="password" name="password" required placeholder="New Password" />
+    <br>
+    <label>Birthday</label>
+    <br>
+
+    </select>
+    <input type="number" name="day" required value="Day" min="1" max="31" />
+
+    <input type="number" name="month" required value="Month" min="1" max="12" />
+
+    <input type="number" name="year" required value="Year" min="1910" max="2020" />
+
+    <br>
+
+
+    <input type="checkbox" name="Female" required />
+
+    <input type="checkbox" name="Male" required />
+
+    <br>
+
+    <label for="height">Height</label>
+    <input type="number" id="height" name="height" required value="150" min="50" max="250" />
+
+    <br>
+
+    <label for="comments">Profile comments:</label>
+    <textarea id="comments" name="comments" rows="8" cols="80"></textarea>
+
+    <h3>Terms and conditions</h3>
+    <div>
+      <label for="Agree">
+        <input id="Agree" type="radio" value="Agree" name="Agree" />
+        Agree
+      </label>
+    </div>
+    <div>
+      <label for="Disagree">
+        <input id="Disagree" type="radio" value="Disagree" name="Disagree" />
+        Disagree
+    </div>
+
+    <input type="hidden" id="productid" name="productid" value="xm234jq" />
+
+    <br>
+
+    <input type="submit" value="Create an account" />
+
+    <input type="reset" value="Erase information" />
+
+  </form>
+</body>
+
+</html>

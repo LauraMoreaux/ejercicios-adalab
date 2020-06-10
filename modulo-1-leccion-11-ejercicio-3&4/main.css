@@ -1,0 +1,9 @@
+* {
+  display: inline-block;
+}
+
+input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}

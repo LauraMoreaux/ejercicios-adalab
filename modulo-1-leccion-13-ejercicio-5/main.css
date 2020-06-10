@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+}
+
+form {
+  margin: 30px;
+}
+
+div {
+  position: relative;
+  margin-top: 20px;
+}
+
+label {
+  position: absolute;
+  left: 10px;
+  transition: all 0.5s ease;
+}
+
+input:focus ~ label {
+  top: -20px;
+  left: 10px;
+}
