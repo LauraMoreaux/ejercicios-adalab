@@ -1,0 +1,10 @@
+button {
+  padding: 15px;
+  border: 1px solid pink;
+  background-color: hotpink;
+  color: white;
+}
+
+.opacity {
+  opacity: 0.1;
+}
