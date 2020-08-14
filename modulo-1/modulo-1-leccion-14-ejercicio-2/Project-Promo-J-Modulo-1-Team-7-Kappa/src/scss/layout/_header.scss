@@ -1,0 +1,114 @@
+.header-tablet {
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  height: 60px;
+
+  @media all and (min-width: 768px) {
+    background-color: $primary-color;
+  }
+
+  & .header-container {
+    max-width: 1200px;
+
+    @media all and (min-width: 768px) {
+      margin: auto;
+      padding: 0px 45px;
+      height: 60px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      text-align: center;
+    }
+
+    @media all and (min-width: 1200px) {
+      padding: 0px 138px;
+    }
+
+    & .mainheader {
+      background-color: rgba(9, 157, 141, 0.95);
+      height: 60px;
+
+      @media all and (min-width: 768px) {
+        width: 20%;
+      }
+    }
+    & .mainheader .wrapper {
+      padding: 0px;
+      margin: 0px;
+      display: flex;
+      justify-content: center; /*para que el logo esté centrado*/
+
+      @media all and (min-width: 768px) {
+        justify-content: left;
+        padding: 0px;
+        width: 100%;
+      }
+    }
+  }
+}
+
+.header-logo {
+  display: inline-block;
+  margin: 0px;
+  width: 30%;
+
+  @media all and (min-width: 768px) {
+    height: 70%;
+    width: 70%;
+    background-color: transparent;
+  }
+}
+
+/*NO LO PUEDO METER EN EL NESTING*/
+
+.header-logo img {
+  height: 60px;
+  width: 100%;
+  object-fit: contain;
+}
+
+.menu1 {
+  height: 45px;
+  background-color: rgba(20, 217, 196, 0.9);
+
+  @media all and (min-width: 768px) {
+    background-color: transparent;
+  }
+
+  & .menu2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: $xsmall;
+    font-family: $secondary-font;
+    font-weight: 500;
+
+    @media all and (min-width: 768px) {
+      margin-top: 10px;
+    }
+  }
+}
+
+.menu2 li a {
+  display: inline-block;
+  color: white; /*NO FUNCIONA LA VARIABLE*/
+}
+
+//MEDIAQUERIES
+
+@media all and (min-width: 768px) {
+  .menu1 .wrapper {
+    padding: 0px;
+    min-width: 100px;
+  }
+
+  .menu2 li {
+    padding: 10px;
+    font-size: $small;
+  }
+}
+
+@media all and (min-width: 1200px) {
+}

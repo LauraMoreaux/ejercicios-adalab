@@ -1,0 +1,39 @@
+.hero {
+  background-image: url(../images/fotoco.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 550px;
+  margin-bottom: 40px;
+
+  & .wrapper {
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  & .quote {
+    transform: translate(0, 50%);
+    background-color: $light-color;
+    padding: 15px;
+    font-family: $primary-font;
+    font-size: $medium;
+    font-weight: 600;
+    width: 290px;
+    margin: 0 auto;
+
+    @media all and (min-width: 768px) {
+      transform: translate(0, 0);
+      background-color: rgba(255, 255, 255, 0.7);
+      padding: 15px 30px;
+      margin: 0;
+      width: 441px;
+    }
+    @media all and (min-width: 1200px) {
+      font-size: $xxlarge;
+    }
+  }
+}

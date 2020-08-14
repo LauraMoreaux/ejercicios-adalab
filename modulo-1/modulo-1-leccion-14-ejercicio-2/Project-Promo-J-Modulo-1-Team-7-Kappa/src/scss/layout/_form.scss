@@ -1,0 +1,115 @@
+.hero {
+  margin-bottom: 0;
+  & .quote {
+    display: none;
+  }
+}
+.asterisk {
+  color: $primary-color2;
+}
+.main-contact .wrapper {
+  text-align: center;
+  & .contact {
+    color: $primary-color;
+    font-family: $secondary-font;
+    font-size: $xxlarge;
+    margin: 30px 0 15px 0;
+    font-weight: 500;
+  }
+  & p {
+    font-family: $primary-font;
+    font-size: $small;
+    line-height: 24px;
+    color: $neutral-color;
+  }
+  & .small {
+    font-size: 12px;
+    margin: 15px 0px 30px 0px;
+  }
+}
+.form {
+  position: relative;
+  width: 100%;
+  font-family: $primary-font;
+  font-size: $xxsmall;
+  color: $neutral-color;
+  & div:last-child {
+    margin-bottom: 60px;
+  }
+  //& div {
+  // width: 100%;
+  & input {
+    height: 45px;
+    padding: 0 15px;
+    display: block;
+    margin: 5px 0 15px 0;
+    width: 100%;
+    border: 1px solid $neutral-color2;
+  }
+  & textarea {
+    width: 100%;
+    height: 105px;
+    padding: 11px 15px;
+    margin-bottom: 30px;
+    margin-top: 5px;
+    border: 1px solid $neutral-color2;
+  }
+  & .send {
+    font-size: $small;
+    border-radius: 4px;
+    background-color: $primary-color;
+    color: $light-color;
+    border: none;
+  }
+  & .email {
+    font-size: $small;
+  }
+  // }
+}
+.main-contact .wrapper {
+  @include tablet {
+    padding-left: 163px;
+    padding-right: 163px;
+  }
+  @include display {
+    padding-left: 300px;
+    padding-right: 300px;
+  }
+}
+.form {
+  @include tablet {
+    padding-left: 163px;
+    padding-right: 163px;
+    margin-bottom: 60px;
+    & .send {
+      position: absolute;
+      right: 163px;
+      width: 206px;
+    }
+  }
+  @include display {
+    padding-left: 300px;
+    padding-right: 300px;
+    margin-bottom: 120px;
+    & .flex {
+      height: 100;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    & .item1 {
+      width: 395px;
+    }
+    & .item2 {
+      width: 162px;
+      margin-right: 0px;
+    }
+
+    & .send {
+      right: 300px;
+      width: 278px;
+    }
+  }
+}

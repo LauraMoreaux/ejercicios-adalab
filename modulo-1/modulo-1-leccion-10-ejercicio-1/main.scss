@@ -1,0 +1,45 @@
+$color: #010101;
+$fontSize: 18px;
+$font: arial, sans-serif;
+$background: yellow;
+$mainBackground: cyan;
+$height: 100px;
+$wrapperMargin: 60px;
+$FooterHeaderHeight: 50px;
+
+body {
+  color: $color; /* Pasar a variable */
+  display: flex;
+  font-family: $font; /* pasar a dos variables: texto y tamaño de texto */
+  font-size: $fontSize;
+  flex-direction: column;
+  margin: 0;
+  min-height: 100vh;
+}
+.wrapper {
+  margin: $wrapperMargin;
+}
+.header {
+  background: $background; /* Pasar a variable */
+  height: $FooterHeaderHeight; /* Pasar a variable */
+  padding: 10px 0;
+  box-sizing: border-box;
+}
+.main {
+  background: $mainBackground; /* Pasar a variable */
+  flex: 1;
+}
+.main__title {
+  color: #fff;
+  font-size: 2.5em;
+}
+.main__content p {
+  font-size: 1.1em;
+  line-height: 140%;
+}
+.footer {
+  background: $background; /* Pasar a variable */
+  height: $FooterHeaderHeight; /* Pasar a variable */
+  padding: 10px 0;
+  box-sizing: border-box;
+}

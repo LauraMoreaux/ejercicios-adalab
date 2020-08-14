@@ -1,0 +1,200 @@
+.title-tab {
+  text-align: center;
+  color: $primary-color;
+  font-family: $secondary-font;
+  font-size: $xxlarge;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  font-weight: 500;
+  width: 100%;
+}
+.name {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  /* border: 1px solid red; */
+}
+.name-left {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  /* border: 1px solid red; */
+}
+.picture {
+  width: 180px;
+  margin-bottom: 15px;
+  & .foto {
+    width: 100%;
+    border: $neutral-color2 solid 4px;
+    border-radius: 8px;
+  }
+}
+
+.description {
+  display: inline;
+  align-content: center;
+  width: 90%; /*eso no se neceisita porque no funciona con inline*/
+
+  & h4 {
+    height: 45px;
+    text-align: center;
+    color: $dark-color;
+    font-family: $primary-font;
+    font-size: $large;
+    font-weight: 300;
+    line-height: 45px;
+    margin: auto;
+    /* background: pink; */
+  }
+  & p {
+    text-align: center;
+    /* background-color: cyan; */
+
+    color: $neutral-color;
+    font-family: $primary-font;
+    font-size: $small;
+    font-weight: 300;
+    line-height: 24px;
+    /* sabado*/
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100%;
+  }
+}
+
+.icons {
+  margin-bottom: 45px;
+  /* background-color: darkorange; */
+  & .list-icons {
+    display: block;
+    height: 30px;
+    width: 126px;
+    padding-top: 15px;
+    margin: auto;
+
+    & li:nth-child(1):after {
+      content: "·";
+      color: $primary-color;
+    }
+    & li:nth-child(2):after {
+      content: "·";
+      color: $primary-color;
+    }
+    & li:nth-child(3):after {
+      content: "·";
+      color: $primary-color;
+    }
+    & li {
+      display: inline-block;
+      padding: 3px;
+
+      & i {
+        color: $primary-color;
+      }
+    }
+  }
+}
+
+.wrapper {
+  @include tablet {
+    .title-tab {
+      padding-bottom: 40px;
+      /* background-color: blueviolet; */
+    }
+    .name {
+      /*name on the left*/
+      margin-bottom: 20px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: flex-start;
+      /* border: 1px solid red; */
+      /* background-color: rgba(152, 228, 152, 0.5); */
+      & .description {
+        /* background-color: rgba(210, 187, 187, 0.5); */
+        width: 70%;
+        text-align: left;
+        /* sabado */
+        padding-top: 5px;
+        padding-left: 20px;
+        padding-right: 10px;
+        & h4 {
+          text-align: left;
+          margin: 0px;
+        }
+        & p {
+          margin-top: 5px;
+          text-align: left;
+          padding-left: 0px;
+          padding-right: 0px;
+        }
+      }
+    }
+    .name-left {
+      /*name right*/
+      margin-bottom: 20px;
+      display: flex;
+      flex-direction: row-reverse;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: flex-start;
+      width: 100%;
+      /* border: 1px solid red; */
+      & .description {
+        width: 70%;
+        text-align: right;
+        padding-top: 5px;
+        padding-left: 10px;
+        padding-right: 20px;
+        & h4 {
+          text-align: right;
+          margin: 0px;
+        }
+        & p {
+          margin-top: 5px;
+          text-align: right;
+          padding-left: 0px;
+          padding-right: 0px;
+        }
+      }
+    }
+    .picture {
+      width: 30%;
+      display: inline;
+      text-align: right;
+      & .foto {
+        width: 100%;
+      }
+    }
+    .list-icons {
+      display: inline-block;
+    }
+  }
+}
+.wrapper {
+  @include display {
+    .description {
+      width: 70%;
+      text-align: left;
+      padding-top: 5px;
+      padding-left: 20px;
+      padding-right: 180px;
+    }
+    .name-left .description {
+      width: 70%;
+      text-align: right;
+      padding-top: 5px;
+      padding-left: 180px;
+      padding-right: 20px;
+    }
+  }
+}

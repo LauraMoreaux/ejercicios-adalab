@@ -1,0 +1,138 @@
+.main-article {
+  text-align: center;
+
+  & .vertical-padding-s {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    @media all and (min-width:768px) {
+      padding-top: 45px;
+      padding-bottom: 30px;
+    }
+    @media all and (min-width:1200px) {
+      padding-top: 45px;
+      padding-bottom: 60px;
+    }
+
+    & .main {
+      color: $primary-color2;
+      font-family: $secondary-font;
+      font-size: $xxlarge;
+      font-weight: 500;
+      line-height: 45px;
+      margin-top: 0;
+      margin-bottom: 0;
+      @media all and (min-width:768px) {
+        color: $primary-color;
+      }
+
+      @media all and (min-width: 1200px) {
+        color: $primary-color;
+      }
+    } 
+
+    & p {
+      color: $neutral-color;
+      font-family: $primary-font;
+      font-size: $small;
+      line-height: 24px;
+      padding-top: 15px;
+    }
+  }
+}
+  
+.square {
+  width: 30px;
+  max-width: 1200px;
+  height: 30px;
+  background-color: $light-color;
+  margin: auto;
+  transform: translate(0, 15px) rotate(45deg);
+}
+
+.secondary {
+  background-color: rgba(84, 88, 90, 0.2);
+  text-align: center;
+
+  & .vertical-padding-l {
+    padding-top: 30px;
+    padding-bottom: 45px;
+    @media all and (min-width: 768px) {
+      padding-top: 45px;
+      padding-bottom: 60px;
+    }
+    @media all and (min-width: 1200px) {
+      padding-top: 45px;
+      padding-bottom: 60px;
+    }
+  }
+
+  & .wrapper {
+    @media all and (min-width: 768px) {
+      display: flex;
+      align-items: center;
+      flex-wrap: nowrap;
+    }
+
+    @media all and (min-width: 1200px) {
+      display: flex;
+    }
+
+    & .secondary-article {
+      @media all and (min-width: 768px) {
+        display: inline-block;
+        width: 50%;
+      }
+
+      @media all and (min-width: 1200px) {
+        width: 50%;
+      }
+
+      &:first-child {
+        @media all and (min-width: 768px) {
+          width: 50%;
+          padding-right: 15px;
+        }
+
+        @media all and (min-width: 1200px) {
+          width: 50%;
+          padding-right: 22.5px;
+        }
+      }
+
+      &:last-child {
+        padding-top: 30px;
+        @media all and (min-width: 768px) {
+          width: 50%;
+          padding-top: 0;
+          padding-left: 15px;
+        }
+
+        @media all and (min-width: 1200px) {
+          width: 50%;
+          padding-left: 22.5px;
+        }
+      }
+    }
+  }
+
+  & h3 {
+    color: $primary-color;
+    font-family: $secondary-font;
+    font-size: $xlarge;
+    font-weight: 500;
+    line-height: 45px;
+    margin-top: 0;
+    margin-bottom: 0;
+
+  }
+
+  & p {
+    color: $neutral-color;
+    font-family: $primary-font;
+    font-size: $small;
+    line-height: 24px;
+    @media all and (min-width: 768px) {
+      padding-top: 15px;
+    }
+  }
+}
